@@ -29,7 +29,7 @@ describe('Sauce Demo Test', () => {
         await expect(productsPage.validateProductsSorted(sortlist.NAME_Z_TO_A)).toBeTruthy();
     });
 
-    it('Sort Products by Name Z to A', async () => {
+    it('Verify CSS Color property on products page', async () => {
         await loginPage.open();
         await loginPage.login('standard_user', 'secret_sauce');
         await expect(productsPage.validateCssColorCodeForProductNames("#e2231a")).toBeTruthy();
